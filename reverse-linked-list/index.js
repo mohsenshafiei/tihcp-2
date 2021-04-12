@@ -9,3 +9,15 @@ const f = (head) => {
   }
   return prev;
 };
+
+const g = (head) => {
+  let prev = null;
+  let curr = head;
+  while (curr.next !== null) {
+    let nextCur = curr.next;
+    curr.next = prev;
+    prev = curr;
+    cur = nextCur;
+  }
+  return prev;
+};
